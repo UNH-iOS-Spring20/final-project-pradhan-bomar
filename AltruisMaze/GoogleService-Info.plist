@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>330972323462-9ic94mftg5jhfiies1girou4770eqeos.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.330972323462-9ic94mftg5jhfiies1girou4770eqeos</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB65Ka8bqWHWEXCfgTcqLrfps72iwEFk1g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>330972323462</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>iOS-Hefele-Class.AltruisMaze</string>
+	<key>PROJECT_ID</key>
+	<string>altruismaze-6256a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>altruismaze-6256a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:330972323462:ios:cff3efec9d0e3b5f203b07</string>
+	<key>DATABASE_URL</key>
+	<string>https://altruismaze-6256a.firebaseio.com</string>
+</dict>
+</plist>
