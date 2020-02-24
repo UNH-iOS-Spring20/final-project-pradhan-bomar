@@ -9,12 +9,9 @@
 class DoorKey{
     var color: String
     var name: String
-    init?(color: String) {
+    init(color: String) {
         self.color = color
         self.name = color + " Key"
-        if color.isEmpty{
-            return nil
-        }
     }
 }
 

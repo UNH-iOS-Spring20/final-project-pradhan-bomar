@@ -21,8 +21,6 @@ class Inventory{
     func findCipher(code: Cipher){
         ciphers.append(code)
     }
-    
-    
-    
-    
 }
+
+let defaultInventory = Inventory.init()

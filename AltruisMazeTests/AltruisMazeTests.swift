@@ -20,31 +20,47 @@ class AltruisMazeTests: XCTestCase {
     }
 
     func testplayerLoadSucceeds() {
-        let testgoodPlayer = Player.init(name: "Hagi", tradePoints: 5, altruismPoints: 2 )
+        let testgoodPlayer = Player.init(name: "Hagi", tradePoints: 5, altruismPoints: 2)
         XCTAssertNotNil(testgoodPlayer)
     }
     
     func testplayerDataBad(){
-        let testbadPlayer = Player.init(name: "Reggie", tradePoints: -2, altruismPoints: 0 )
+        let testbadPlayer = Player.init(name: "Reggie", tradePoints: -2, altruismPoints: 0)
         XCTAssertNil(testbadPlayer)
     }
     
     func testplayerPointsGood(){
-        let testgoodPlayer = Player.init(name: "Marco", tradePoints: 10, altruismPoints: 5 )
+        let testgoodPlayer = Player.init(name: "Marco", tradePoints: 10, altruismPoints: 5)
         XCTAssertEqual(10, testgoodPlayer?.tradePoints)
     }
     
     func testplayerPointsBad(){
-        let testbadPlayer = Player.init(name: "Polo", tradePoints: 7, altruismPoints: 3 )
+        let testbadPlayer = Player.init(name: "Polo", tradePoints: 7, altruismPoints: 3)
         XCTAssertNotEqual(25, testbadPlayer?.altruismPoints)
-    }
-    func testplayerOwnsInventory(){
-        let testbadPlayer = Player.init(name: "Leeroy", tradePoints: 5, altruismPoints: 2 )
-        testbadPlayer.backpack.additem(name: "blueKey", type: "key")
     }
     
     func testGoodKeyNaming(){
-        
+        let goodtestkey = DoorKey.init(color: "Green")
+        var testing: Bool
+        if(goodtestkey.name == "Green Key"){
+            testing = true
+        }
+        else{
+            testing = false
+        }
+        XCTAssertTrue(testing)
+    }
+    
+    func testBadKeyNaming(){
+        let badtestkey = DoorKey.init(color: "Blue")
+        var testing: Bool
+        if(badtestkey.name == "Red Key"){
+            testing = true
+        }
+        else{
+            testing = false
+        }
+        XCTAssertFalse(testing)
     }
     
     
