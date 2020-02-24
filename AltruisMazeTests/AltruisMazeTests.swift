@@ -19,9 +19,9 @@ class AltruisMazeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testplayerLoginSucceeds() {
-        let currentPlayer = Player.init(name: "Hagi", tradePoints: 5, altruismPoints: 2)
-        XCTAssertNotNil(currentPlayer)
+    func testplayerLoadSucceeds() {
+        let testgoodPlayer = Player.init(name: "Hagi", tradePoints: 5, altruismPoints: 2 )
+        XCTAssertNotNil(testgoodPlayer)
     }
     
     func testplayerDataBad(){

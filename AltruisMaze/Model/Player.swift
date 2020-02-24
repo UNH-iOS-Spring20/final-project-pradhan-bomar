@@ -8,7 +8,18 @@
 
 class Player{
     var name: String
-    var tradePoints
+    var tradePoints: Int
+    var altruismPoints: Int
+    
+    init?(name: String, tradePoints: Int, altruismPoints: Int){
+        if name.isEmpty || tradePoints < 0 || altruismPoints < 0 {
+            return nil
+        }
+        self.name = name
+        self.tradePoints = tradePoints
+        self.altruismPoints = altruismPoints
+    }
+    
 }
 
 
