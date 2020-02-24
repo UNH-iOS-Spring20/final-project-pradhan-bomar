@@ -35,7 +35,8 @@ class AltruisMazeTests: XCTestCase {
     }
     
     func testplayerPointsBad(){
-        
+        let testbadPlayer = Player.init(name: "Polo", tradePoints: 7, altruismPoints: 3 )
+        XCTAssertNotEqual(25, testbadPlayer?.altruismPoints)
     }
     
     
