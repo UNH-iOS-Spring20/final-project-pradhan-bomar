@@ -12,6 +12,7 @@ import GameplayKit
 class GameScene: SKScene {
     
     //Player Representation
+    
     var player = SKSpriteNode()
     
     var entities = [GKEntity]()

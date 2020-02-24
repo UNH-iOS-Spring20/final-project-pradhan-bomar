@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A635DC424036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
+		3A635DC524036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
+		3A635DC624036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
 		3ADA75FB240311E4007F5248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA75FA240311E4007F5248 /* AppDelegate.swift */; };
 		3ADA75FD240311E4007F5248 /* Room1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3ADA75FC240311E4007F5248 /* Room1.sks */; };
 		3ADA75FF240311E4007F5248 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3ADA75FE240311E4007F5248 /* Actions.sks */; };
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A635DC324036A7F008FC3FF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3ADA75F7240311E4007F5248 /* AltruisMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltruisMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADA75FA240311E4007F5248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ADA75FC240311E4007F5248 /* Room1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Room1.sks; sourceTree = "<group>"; };
@@ -80,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A635DC224036A52008FC3FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A635DC324036A7F008FC3FF /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3ADA75EE240311E4007F5248 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 		3ADA75F9240311E4007F5248 /* AltruisMaze */ = {
 			isa = PBXGroup;
 			children = (
+				3A635DC224036A52008FC3FF /* Model */,
 				3ADA75FA240311E4007F5248 /* AppDelegate.swift */,
 				3ADA75FC240311E4007F5248 /* Room1.sks */,
 				3ADA75FE240311E4007F5248 /* Actions.sks */,
@@ -267,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A635DC424036A7F008FC3FF /* Player.swift in Sources */,
 				3ADA7601240311E4007F5248 /* Room1.swift in Sources */,
 				3ADA7603240311E4007F5248 /* GameViewController.swift in Sources */,
 				3ADA75FB240311E4007F5248 /* AppDelegate.swift in Sources */,
@@ -277,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A635DC524036A7F008FC3FF /* Player.swift in Sources */,
 				3ADA7616240311E8007F5248 /* AltruisMazeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A635DC624036A7F008FC3FF /* Player.swift in Sources */,
 				3ADA7621240311E8007F5248 /* AltruisMazeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
