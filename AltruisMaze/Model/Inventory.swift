@@ -8,8 +8,20 @@
 
 class Inventory{
     var keys = [DoorKey]()
+    func pickupKey(key: DoorKey) {
+        keys.append(key)
+    }
+    
     var photos = [Photo]()
+    func takePhoto(pic: Photo){
+        photos.append(pic)
+    }
+    
     var ciphers = [Cipher]()
+    func findCipher(code: Cipher){
+        ciphers.append(code)
+    }
+    
     
     
     
