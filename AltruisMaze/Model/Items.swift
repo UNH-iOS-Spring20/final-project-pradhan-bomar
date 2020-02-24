@@ -21,7 +21,7 @@ class DoorKey{
 class Photo{
     var name: String
     init(name: String){
-        self.name = "This is a Photo you took."
+        self.name = "This is a Photo you took." //Temp Placeholder
     }
 }
 
