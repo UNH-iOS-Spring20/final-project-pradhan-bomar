@@ -8,8 +8,9 @@
 
 class Inventory{
     var keys = [DoorKey]()
-    var photos = [Photos]()
-    var ciphers = [Ciphers]()
+    var photos = [Photo]()
+    var ciphers = [Cipher]()
+    
     
     
 }

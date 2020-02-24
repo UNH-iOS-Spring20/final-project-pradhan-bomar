@@ -43,6 +43,11 @@ class AltruisMazeTests: XCTestCase {
         testbadPlayer.backpack.additem(name: "blueKey", type: "key")
     }
     
+    func testGoodKeyNaming(){
+        
+    }
+    
+    
     
     
 
