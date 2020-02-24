@@ -49,23 +49,7 @@ class AltruisMazeTests: XCTestCase {
             testing = false
         }
         XCTAssertTrue(testing)
-    }
-    
-    func testBadKeyNaming(){
-        let badtestkey = DoorKey.init(color: "Blue")
-        var testing: Bool
-        if(badtestkey.name == "Red Key"){
-            testing = true
-        }
-        else{
-            testing = false
-        }
-        XCTAssertFalse(testing)
-    }
-    
-    
-    
-    
+    } 
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
