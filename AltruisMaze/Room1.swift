@@ -11,6 +11,9 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    //Player Representation
+    var player = SKSpriteNode()
+    
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
     
@@ -20,6 +23,8 @@ class GameScene: SKScene {
     
     override func sceneDidLoad() {
 
+        player = self.childNode(withName: "Player") as! SKSpriteNode
+        
         self.lastUpdateTime = 0
         
         // Get label node from scene and store it for use later
