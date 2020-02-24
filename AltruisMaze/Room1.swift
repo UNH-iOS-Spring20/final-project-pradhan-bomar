@@ -25,6 +25,12 @@ class GameScene: SKScene {
 
         player = self.childNode(withName: "Player") as! SKSpriteNode
         
+        //Frictionless bounds set up on room
+        let border = SKPhysicsBody(edgeLoopFrom: self.frame)
+        border.friction = 0
+        border.restitution = 0
+        self.physicsBody = border
+        
         self.lastUpdateTime = 0
         
         // Get label node from scene and store it for use later
