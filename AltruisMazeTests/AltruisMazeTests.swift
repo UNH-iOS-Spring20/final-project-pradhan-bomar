@@ -25,7 +25,8 @@ class AltruisMazeTests: XCTestCase {
     }
     
     func testplayerDataBad(){
-        
+        let testbadPlayer = Player.init(name: "Reggie", tradePoints: -2, altruismPoints: 0 )
+        XCTAssertNil(testbadPlayer)
     }
 
     func testPerformanceExample() {
