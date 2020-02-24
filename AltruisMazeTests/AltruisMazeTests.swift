@@ -28,6 +28,17 @@ class AltruisMazeTests: XCTestCase {
         let testbadPlayer = Player.init(name: "Reggie", tradePoints: -2, altruismPoints: 0 )
         XCTAssertNil(testbadPlayer)
     }
+    
+    func testplayerPointsGood(){
+        let testgoodPlayer = Player.init(name: "Marco", tradePoints: 10, altruismPoints: 5 )
+        XCTAssertEqual(10, testgoodPlayer?.tradePoints)
+    }
+    
+    func testplayerPointsBad(){
+        
+    }
+    
+    
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
