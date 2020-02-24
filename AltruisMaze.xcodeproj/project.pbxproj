@@ -10,6 +10,9 @@
 		3A635DC424036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
 		3A635DC524036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
 		3A635DC624036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
+		3A635DC824037533008FC3FF /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC724037533008FC3FF /* Inventory.swift */; };
+		3A635DC924037533008FC3FF /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC724037533008FC3FF /* Inventory.swift */; };
+		3A635DCA24037533008FC3FF /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC724037533008FC3FF /* Inventory.swift */; };
 		3ADA75FB240311E4007F5248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA75FA240311E4007F5248 /* AppDelegate.swift */; };
 		3ADA75FD240311E4007F5248 /* Room1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3ADA75FC240311E4007F5248 /* Room1.sks */; };
 		3ADA75FF240311E4007F5248 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3ADA75FE240311E4007F5248 /* Actions.sks */; };
@@ -41,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		3A635DC324036A7F008FC3FF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3A635DC724037533008FC3FF /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		3ADA75F7240311E4007F5248 /* AltruisMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltruisMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADA75FA240311E4007F5248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ADA75FC240311E4007F5248 /* Room1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Room1.sks; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3A635DC324036A7F008FC3FF /* Player.swift */,
+				3A635DC724037533008FC3FF /* Inventory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			files = (
 				3A635DC424036A7F008FC3FF /* Player.swift in Sources */,
 				3ADA7601240311E4007F5248 /* Room1.swift in Sources */,
+				3A635DC824037533008FC3FF /* Inventory.swift in Sources */,
 				3ADA7603240311E4007F5248 /* GameViewController.swift in Sources */,
 				3ADA75FB240311E4007F5248 /* AppDelegate.swift in Sources */,
 			);
@@ -291,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A635DC924037533008FC3FF /* Inventory.swift in Sources */,
 				3A635DC524036A7F008FC3FF /* Player.swift in Sources */,
 				3ADA7616240311E8007F5248 /* AltruisMazeTests.swift in Sources */,
 			);
@@ -300,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A635DCA24037533008FC3FF /* Inventory.swift in Sources */,
 				3A635DC624036A7F008FC3FF /* Player.swift in Sources */,
 				3ADA7621240311E8007F5248 /* AltruisMazeUITests.swift in Sources */,
 			);

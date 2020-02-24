@@ -40,7 +40,7 @@ class AltruisMazeTests: XCTestCase {
     }
     func testplayerOwnsInventory(){
         let testbadPlayer = Player.init(name: "Leeroy", tradePoints: 5, altruismPoints: 2 )
-        XCTAssertNotEqual(25, testbadPlayer?.altruismPoints)
+        testbadPlayer.backpack.additem(name: "blueKey", type: "key")
     }
     
     
