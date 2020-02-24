@@ -19,9 +19,13 @@ class AltruisMazeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testplayerLoginSucceeds() {
+        let currentPlayer = Player.init(name: "Hagi", tradePoints: 5, altruismPoints: 2)
+        XCTAssertNotNil(currentPlayer)
+    }
+    
+    func testplayerDataBad(){
+        
     }
 
     func testPerformanceExample() {
