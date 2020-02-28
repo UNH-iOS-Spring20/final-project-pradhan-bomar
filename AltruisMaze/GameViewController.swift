@@ -42,6 +42,11 @@ class GameViewController: UIViewController {
         }
     }
     
+    func rotation(){
+        
+    }
+    
+    
     func navigationControllerSupportedInterfaceOrientations(_ navigationController: UINavigationController) -> UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.landscape
     }
