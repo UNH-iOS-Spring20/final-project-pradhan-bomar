@@ -8,6 +8,6 @@
 
 import UIKit
 
-class Room_1S: SKSSpriteNode.sks {
+//class Room_1S: SKSSpriteNode.sks {
 
-}
+//}
