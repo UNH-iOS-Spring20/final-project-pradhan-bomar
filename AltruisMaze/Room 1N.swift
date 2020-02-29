@@ -11,6 +11,16 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    //Rotation Button
+    override func didMove(to view: SKView) {
+        backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
+        let button = SKSpriteNode(imageNamed: "rotateButton.png")
+        button.position = CGPoint(x: self.frame.size.width/10, y: self.frame.size.height/10)
+        button.name = "rotateButton"
+            
+        self.addChild(button)
+    }
+    
     //Player Representation
     
     var player = SKSpriteNode()
