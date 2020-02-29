@@ -12,11 +12,13 @@ class Player{
     var altruismPoints: Int
     var backpack: Inventory
     var currentRoom: String
+    var faceNorth: Bool
     init?(name: String, tradePoints: Int, altruismPoints: Int){
         if name.isEmpty || tradePoints < 0 || altruismPoints < 0 {
             return nil
         }
         self.name = name
+        self.faceNorth = true
         self.tradePoints = tradePoints
         self.altruismPoints = altruismPoints
         self.backpack = defaultInventory

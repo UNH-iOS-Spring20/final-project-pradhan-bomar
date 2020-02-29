@@ -10,7 +10,7 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-    
+
     //Rotation Button
     override func didMove(to view: SKView) {
         backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
@@ -22,7 +22,6 @@ class GameScene: SKScene {
     }
     
     //Player Representation
-    
     var player = SKSpriteNode()
     
     var entities = [GKEntity]()
@@ -96,11 +95,13 @@ class GameScene: SKScene {
             let nodesarray = nodes(at: location)
                
             for node in nodesarray {
+
+                //Rotate Function
                 if node.name == "rotateButton" {
-                let secondScene = GameScene(fileNamed: "Room 1S")
-                    let transition = SKTransition.flipHorizontal(withDuration: 0.85)
-                secondScene?.scaleMode = .aspectFill
-                scene?.view?.presentScene(secondScene!, transition: transition)
+                    let secondScene = SouthScene(fileNamed: "Room 1S")
+                    let transition = SKTransition.flipHorizontal(withDuration: 0.75)
+                    secondScene?.scaleMode = .aspectFill
+                    scene?.view?.presentScene(secondScene!, transition: transition)
                 }
             }
         }
