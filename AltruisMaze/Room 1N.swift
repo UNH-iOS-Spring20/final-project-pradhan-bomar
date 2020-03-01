@@ -11,17 +11,17 @@ import GameplayKit
 
 class GameScene: SKScene {
 
-    //Rotation Button
+    
+    
     override func didMove(to view: SKView) {
+        //Rotation Button
         backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
         let button = SKSpriteNode(imageNamed: "rotateButton.png")
         button.position = CGPoint(x: self.frame.size.width/10, y: self.frame.size.height/10)
         button.name = "rotateButton"
-            
         self.addChild(button)
     }
-    
-   
+
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
@@ -87,15 +87,27 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         if let touch = touches.first {
             let location = touch.location(in: self)
             let nodesarray = nodes(at: location)
                
             for node in nodesarray {
-
+                
                 //Rotate Function
                 if node.name == "rotateButton" {
-                    let secondScene = SouthScene(fileNamed: "Room 1S")
+                    var facingNorth: Bool = false
+                    if let roomDirection = view?.scene!.name?.last{
+                        if( roomDirection == "N"){
+                            facingNorth = true
+                        }
+                    }
+                    
+                    var nextRoom: String
+                    if(facingNorth) { nextRoom = "Room 1S"}
+                    else{ nextRoom = "Room 1N"}
+                    
+                    let secondScene = SouthScene(fileNamed: nextRoom)
                     let transition = SKTransition.flipHorizontal(withDuration: 0.75)
                     secondScene?.scaleMode = .aspectFill
                     scene?.view?.presentScene(secondScene!, transition: transition)
