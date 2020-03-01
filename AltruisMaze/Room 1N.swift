@@ -21,8 +21,7 @@ class GameScene: SKScene {
         self.addChild(button)
     }
     
-    //Player Representation
-    var player = SKSpriteNode()
+   
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
@@ -32,8 +31,6 @@ class GameScene: SKScene {
     private var spinnyNode : SKShapeNode?
     
     override func sceneDidLoad() {
-
-        player = self.childNode(withName: "Player") as! SKSpriteNode
         
         //Frictionless bounds set up on room
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
