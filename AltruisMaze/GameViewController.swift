@@ -15,7 +15,18 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Database connection testing
+        let db = Firestore.firestore()
+        db.collection("users").getDocuments() {
+            (QuerySnapshot, err) in
+            if let err = err {
+                print("Error getting document: \(err)")
+            } else {
+                for document in QuerySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
         if let scene = GKScene(fileNamed: "Room 1N") {
