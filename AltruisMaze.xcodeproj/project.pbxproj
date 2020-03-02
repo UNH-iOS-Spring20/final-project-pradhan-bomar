@@ -72,7 +72,7 @@
 		3A635DC324036A7F008FC3FF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3A635DC724037533008FC3FF /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		3A635DCB240375E6008FC3FF /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
-		3A7103BE240CBE5800C55202 /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image0.png; path = "AltruisMaze/Assets.xcassets/Temp Logo.imageset/image0.png"; sourceTree = "<group>"; };
+		3A7103BE240CBE5800C55202 /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
 		3A8B1596240A0BD000A39921 /* Room 1S.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Room 1S.sks"; sourceTree = "<group>"; };
 		3ADA75F7240311E4007F5248 /* AltruisMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltruisMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADA75FA240311E4007F5248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,11 +138,11 @@
 		3ADA75EE240311E4007F5248 = {
 			isa = PBXGroup;
 			children = (
-				3A7103BE240CBE5800C55202 /* image0.png */,
 				3ADA75F9240311E4007F5248 /* AltruisMaze */,
 				3ADA7614240311E8007F5248 /* AltruisMazeTests */,
 				3ADA761F240311E8007F5248 /* AltruisMazeUITests */,
 				3ADA75F8240311E4007F5248 /* Products */,
+				3A7103BE240CBE5800C55202 /* image0.png */,
 				CEEEF57E528F84E9F61C7708 /* Pods */,
 				50FE1B3EEECBF5BF6A41F0DE /* Frameworks */,
 			);
