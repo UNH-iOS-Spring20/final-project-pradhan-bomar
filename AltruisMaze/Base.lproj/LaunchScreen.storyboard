@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_5" orientation="landscape" appearance="light"/>
+    <device id="retina5_5" orientation="landscape" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,16 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="r7T-tm-oFu">
-                                <rect key="frame" x="168" y="57" width="400" height="300"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="image0.png" translatesAutoresizingMaskIntoConstraints="NO" id="9mC-dd-QyW">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="394"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.14818674325942993" green="0.14878377318382263" blue="0.30234050750732422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="r7T-tm-oFu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UUV-3y-8BI"/>
-                            <constraint firstItem="r7T-tm-oFu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="csG-zJ-aGd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9mC-dd-QyW" secondAttribute="bottom" constant="20" id="2K3-r6-cJh"/>
+                            <constraint firstItem="9mC-dd-QyW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6Bp-IH-3W7"/>
+                            <constraint firstItem="9mC-dd-QyW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q4n-jv-Kmt"/>
+                            <constraint firstItem="9mC-dd-QyW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cIa-d7-ghp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="image0" width="400" height="300"/>
+        <image name="image0.png" width="296.9072265625" height="222.680419921875"/>
     </resources>
 </document>
