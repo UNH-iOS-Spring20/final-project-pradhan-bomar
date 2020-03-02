@@ -107,8 +107,8 @@ class GameScene: SKScene {
                     if(facingNorth) { nextRoom = "Room 1S"}
                     else{ nextRoom = "Room 1N"}
                     
-                    let secondScene = SouthScene(fileNamed: nextRoom)
-                    let transition = SKTransition.flipHorizontal(withDuration: 0.75)
+                    let secondScene = GameScene(fileNamed: nextRoom)
+                    let transition = SKTransition.fade(withDuration: 0.45)
                     secondScene?.scaleMode = .aspectFill
                     scene?.view?.presentScene(secondScene!, transition: transition)
                 }
