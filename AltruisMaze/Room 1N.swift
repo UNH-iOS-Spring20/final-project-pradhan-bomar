@@ -96,16 +96,16 @@ class GameScene: SKScene {
                 
                 //Rotate Function
                 if node.name == "rotateButton" {
-                    var facingNorth: Bool = false
-                    if let roomDirection = view?.scene!.name?.last{
-                        if( roomDirection == "N"){
+                    var facingNorth: Bool = false //Default South
+                    var currentRoom = view?.scene!.name
+                    let roomDirection = currentRoom?.last
+                    if( roomDirection == "N"){
                             facingNorth = true
-                        }
                     }
                     
                     var nextRoom: String
-                    if(facingNorth) { nextRoom = "Room 1S"}
-                    else{ nextRoom = "Room 1N"}
+                    if(facingNorth) { nextRoom = currentRoom - 1 + "S"}
+                    else{ nextRoom = currentRoom - 1 + "N"}
                     
                     let secondScene = GameScene(fileNamed: nextRoom)
                     let transition = SKTransition.fade(withDuration: 0.45)
