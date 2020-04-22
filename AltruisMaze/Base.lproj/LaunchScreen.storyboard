@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="image0.png" translatesAutoresizingMaskIntoConstraints="NO" id="9mC-dd-QyW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Temp Logo" translatesAutoresizingMaskIntoConstraints="NO" id="9mC-dd-QyW">
                                 <rect key="frame" x="0.0" y="0.0" width="736" height="394"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
@@ -39,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="image0.png" width="296.9072265625" height="222.680419921875"/>
+        <image name="Temp Logo" width="133.33332824707031" height="100"/>
     </resources>
 </document>
