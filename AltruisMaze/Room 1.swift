@@ -10,16 +10,19 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-
-    //Test Comment to see if it commits
     
     override func didMove(to view: SKView) {
         //Rotation Button
         backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
-        let button = SKSpriteNode(imageNamed: "rotateButton.png")
-        button.position = CGPoint(x: self.frame.size.width/10, y: self.frame.size.height/10)
-        button.name = "rotateButton"
-        self.addChild(button)
+        let rotateButton = SKSpriteNode(imageNamed: "rotateButton.png")
+        rotateButton.position = CGPoint(x: self.frame.size.width/10, y: self.frame.size.height/10)
+        rotateButton.name = "rotateButton"
+        self.addChild(rotateButton)
+        
+        
+        //NE Door
+        var NEDoor = self.childNode(withName: "CodeDoor-Green") as? SKSpriteNode
+        
     }
 
     
@@ -69,7 +72,7 @@ class GameScene: SKScene {
                     let currentRoom = view?.scene!.name
                     let roomDirection = currentRoom?.last //Get last character of current room which is N or S
                     var nextRoom: String
-                    nextRoom = String(currentRoom?.dropLast() ?? "Room1A")
+                    nextRoom = String((currentRoom?.dropLast())!)
                     if( roomDirection == "N"){ //If North, new scene will face South in the same room.
                         nextRoom +=  "S"
                     }
@@ -79,7 +82,15 @@ class GameScene: SKScene {
                     let secondScene = GameScene(fileNamed: nextRoom)
                     let transition = SKTransition.fade(withDuration: 0.45)
                     secondScene?.scaleMode = .aspectFill
-                    scene?.view?.presentScene(secondScene!, transition: transition)
+                    self.view?.presentScene(secondScene!, transition: transition)
+                }
+                
+                //NE Door Transition to Room 2
+                else if node.name == "codeDoor-Green"{
+                    let secondScene = GameScene(fileNamed: "Room 2N")
+                    let transition = SKTransition.fade(withDuration: 0.45)
+                    secondScene?.scaleMode = .aspectFill
+                    self.view?.presentScene(secondScene!, transition: transition)
                 }
             }
         }
