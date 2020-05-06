@@ -12,16 +12,32 @@ import GameplayKit
 class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
-        //Rotation Button
         backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
+        
+        //Rotation Button
         let rotateButton = SKSpriteNode(imageNamed: "rotateButton.png")
         rotateButton.position = CGPoint(x: self.frame.size.width/10, y: self.frame.size.height/10)
         rotateButton.name = "rotateButton"
         self.addChild(rotateButton)
         
-        
+        //Player Appearance and Orientation
+        let currentRoom = view.scene!.name
+        let roomDirection = currentRoom?.last //Get last character of current room which is N or S
+        var whichTim: String
+        let doorTraversed: Bool = false, faceRight: Bool = false
+        if doorTraversed == true {
+            if faceRight {whichTim = "Tim-NE.png"}
+            else {whichTim = "Tim-NW.png"}
+        }
+        else if roomDirection == "N" {whichTim = "Tim-NE.png"}
+        else {whichTim = "Tim-SW.png"}
+        let Player = SKSpriteNode(imageNamed: whichTim)
+        Player.position = CGPoint(x: 1118.212, y: 450.682)
+        Player.size = CGSize(width: 544.085, height: 485)
+        Player.zPosition = 1
+        scene?.addChild(Player)
     }
-
+    
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
@@ -64,10 +80,12 @@ class GameScene: SKScene {
                
             for node in nodesarray {
                 
+                let currentRoom = view?.scene!.name
+                let roomDirection = currentRoom?.last //Get last character of current room which is N or S
+                
                 //Rotate Function
                 if node.name == "rotateButton" {
-                    let currentRoom = view?.scene!.name
-                    let roomDirection = currentRoom?.last //Get last character of current room which is N or S
+                    
                     var nextRoom: String
                     nextRoom = String((currentRoom?.dropLast())!)
                     if( roomDirection == "N"){ //If North, new scene will face South in the same room.
@@ -82,11 +100,14 @@ class GameScene: SKScene {
                     scene?.view?.presentScene(secondScene!, transition: transition)
                 }
                 
-                //NE Door Transition to Room 2
+                //Door Transition between Room 1 & 2
                 else if node.name == "codeDoor-Green"{
-                    let secondScene = GameScene(fileNamed: "Room 2N")
+                    var secondScene = GameScene(fileNamed: currentRoom!)
+                    if currentRoom == "Room 1N" {secondScene = GameScene(fileNamed: "Room 2N")!}
+                    else if currentRoom == "Room 2S" {secondScene = GameScene(fileNamed: "Room 1S")!}
                     let transition = SKTransition.fade(withDuration: 0.45)
-                    secondScene?.scaleMode = .aspectFill
+                    secondScene!.scaleMode = .aspectFill
+                    
                     //Check Code
                     let code: Bool = true
                     if code{scene?.view?.presentScene(secondScene!, transition: transition)}
