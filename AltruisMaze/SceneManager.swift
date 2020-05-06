@@ -123,7 +123,14 @@ class GameScene: SKScene {
                     let code: Bool = true
                     if code{scene?.view?.presentScene(secondScene!, transition: transition)}
                 }
-            }
+                
+                else if node.name == "messageButton"{
+                    var messageBoard = GameScene(fileNamed : "MessageBoard")
+                    let transition = SKTransition.fade(withDuration: 0.45)
+                    messageBoard!.scaleMode = .aspectFill
+                    scene?.view?.presentScene(messageBoard!, transition: transition)
+                    
+                }            }
         }
     }
 }

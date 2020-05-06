@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23326F212C4A9131639F4219 /* Pods_AltruisMaze_AltruisMazeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE44A5CCAA1129BFB097C26 /* Pods_AltruisMaze_AltruisMazeUITests.framework */; };
 		2A382C4824621A4800CFCF60 /* Room 2N.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C4724621A4800CFCF60 /* Room 2N.sks */; };
 		2A382C4C2462662F00CFCF60 /* Room 2S.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C4B2462662F00CFCF60 /* Room 2S.sks */; };
 		2A382C4D2462662F00CFCF60 /* Room 2S.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C4B2462662F00CFCF60 /* Room 2S.sks */; };
 		2A382C4E2462662F00CFCF60 /* Room 2S.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C4B2462662F00CFCF60 /* Room 2S.sks */; };
+		2ABA8AEA24637E7500494AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA8AE924637E7500494AA8 /* Assets.xcassets */; };
+		2ABA8AEC24637E9A00494AA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA8AEB24637E9A00494AA8 /* GoogleService-Info.plist */; };
 		3A635DC424036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
 		3A635DC524036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
 		3A635DC624036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
@@ -29,16 +32,11 @@
 		3ADA7601240311E4007F5248 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA7600240311E4007F5248 /* SceneManager.swift */; };
 		3ADA7603240311E4007F5248 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA7602240311E4007F5248 /* GameViewController.swift */; };
 		3ADA7606240311E4007F5248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ADA7604240311E4007F5248 /* Main.storyboard */; };
-		3ADA7608240311E7007F5248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ADA7607240311E7007F5248 /* Assets.xcassets */; };
 		3ADA760B240311E7007F5248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ADA7609240311E7007F5248 /* LaunchScreen.storyboard */; };
 		3ADA7616240311E8007F5248 /* AltruisMazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA7615240311E8007F5248 /* AltruisMazeTests.swift */; };
 		3ADA7621240311E8007F5248 /* AltruisMazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA7620240311E8007F5248 /* AltruisMazeUITests.swift */; };
-		4071D806323F749DB3493859 /* Pods_AltruisMaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE13CE6EE69CCED95578A9B /* Pods_AltruisMaze.framework */; };
-		71D0CFA3A5E00240E1DB10F0 /* Pods_AltruisMaze_AltruisMazeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32066CF712B8C37539609DEE /* Pods_AltruisMaze_AltruisMazeUITests.framework */; };
-		8F2D2A748A03A00B0F901759 /* Pods_AltruisMazeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A41FC7AB3A0675F5CE75E0 /* Pods_AltruisMazeTests.framework */; };
-		C721C912240C4CC90079F8DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C721C911240C4CC90079F8DA /* GoogleService-Info.plist */; };
-		C721C913240C4CC90079F8DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C721C911240C4CC90079F8DA /* GoogleService-Info.plist */; };
-		C721C914240C4CC90079F8DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C721C911240C4CC90079F8DA /* GoogleService-Info.plist */; };
+		C072B94CE53B43F0B3F07526 /* Pods_AltruisMaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265E4E5961D1838FC96920D7 /* Pods_AltruisMaze.framework */; };
+		DC69DF2FE8AC39F78A23AF80 /* Pods_AltruisMazeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4194D5AFDF6BB7C445207343 /* Pods_AltruisMazeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B1FB5B13F1ADDE1219F50E /* Pods-AltruisMaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMaze.debug.xcconfig"; path = "Target Support Files/Pods-AltruisMaze/Pods-AltruisMaze.debug.xcconfig"; sourceTree = "<group>"; };
-		0FFE7C85EBDC99F384F2AF4C /* Pods-AltruisMazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMazeTests.release.xcconfig"; path = "Target Support Files/Pods-AltruisMazeTests/Pods-AltruisMazeTests.release.xcconfig"; sourceTree = "<group>"; };
+		055778E4BB73A0E1339734BD /* Pods-AltruisMaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMaze.debug.xcconfig"; path = "Target Support Files/Pods-AltruisMaze/Pods-AltruisMaze.debug.xcconfig"; sourceTree = "<group>"; };
+		21A8F2EEDB5F6030D684FE5E /* Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig"; path = "Target Support Files/Pods-AltruisMaze-AltruisMazeUITests/Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		265E4E5961D1838FC96920D7 /* Pods_AltruisMaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltruisMaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A382C4724621A4800CFCF60 /* Room 2N.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Room 2N.sks"; sourceTree = "<group>"; };
 		2A382C4B2462662F00CFCF60 /* Room 2S.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Room 2S.sks"; sourceTree = "<group>"; };
-		32066CF712B8C37539609DEE /* Pods_AltruisMaze_AltruisMazeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltruisMaze_AltruisMazeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3688674F20E842B7F0D62086 /* Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig"; path = "Target Support Files/Pods-AltruisMaze-AltruisMazeUITests/Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2ABA8AE924637E7500494AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ABA8AEB24637E9A00494AA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A635DC324036A7F008FC3FF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3A635DC724037533008FC3FF /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		3A635DCB240375E6008FC3FF /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
@@ -76,7 +75,6 @@
 		3ADA7600240311E4007F5248 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 		3ADA7602240311E4007F5248 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3ADA7605240311E4007F5248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3ADA7607240311E7007F5248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/iphone/Documents/final-project-pratigya-shawn/AltruisMaze/Assets.xcassets"; sourceTree = "<absolute>"; };
 		3ADA760A240311E7007F5248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ADA760C240311E7007F5248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ADA7611240311E8007F5248 /* AltruisMazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AltruisMazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,12 +83,12 @@
 		3ADA761C240311E8007F5248 /* AltruisMazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AltruisMazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADA7620240311E8007F5248 /* AltruisMazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltruisMazeUITests.swift; sourceTree = "<group>"; };
 		3ADA7622240311E8007F5248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DE13CE6EE69CCED95578A9B /* Pods_AltruisMaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltruisMaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BFDC902A3888B7932399FDA /* Pods-AltruisMaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMaze.release.xcconfig"; path = "Target Support Files/Pods-AltruisMaze/Pods-AltruisMaze.release.xcconfig"; sourceTree = "<group>"; };
-		C721C911240C4CC90079F8DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D84862C9CE54A044B6F06EB8 /* Pods-AltruisMazeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMazeTests.debug.xcconfig"; path = "Target Support Files/Pods-AltruisMazeTests/Pods-AltruisMazeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E117B9311EE2555524174089 /* Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig"; path = "Target Support Files/Pods-AltruisMaze-AltruisMazeUITests/Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E3A41FC7AB3A0675F5CE75E0 /* Pods_AltruisMazeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltruisMazeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4194D5AFDF6BB7C445207343 /* Pods_AltruisMazeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltruisMazeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F49BAA74603E251CBCD5E7 /* Pods-AltruisMaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMaze.release.xcconfig"; path = "Target Support Files/Pods-AltruisMaze/Pods-AltruisMaze.release.xcconfig"; sourceTree = "<group>"; };
+		8AF114A9B5C061DEC1E39DB3 /* Pods-AltruisMazeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMazeTests.debug.xcconfig"; path = "Target Support Files/Pods-AltruisMazeTests/Pods-AltruisMazeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EE44A5CCAA1129BFB097C26 /* Pods_AltruisMaze_AltruisMazeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltruisMaze_AltruisMazeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F66514543E8F1DEA413DB3 /* Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig"; path = "Target Support Files/Pods-AltruisMaze-AltruisMazeUITests/Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F92089360AD58CC1322D5FBF /* Pods-AltruisMazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltruisMazeTests.release.xcconfig"; path = "Target Support Files/Pods-AltruisMazeTests/Pods-AltruisMazeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4071D806323F749DB3493859 /* Pods_AltruisMaze.framework in Frameworks */,
+				C072B94CE53B43F0B3F07526 /* Pods_AltruisMaze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F2D2A748A03A00B0F901759 /* Pods_AltruisMazeTests.framework in Frameworks */,
+				DC69DF2FE8AC39F78A23AF80 /* Pods_AltruisMazeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71D0CFA3A5E00240E1DB10F0 /* Pods_AltruisMaze_AltruisMazeUITests.framework in Frameworks */,
+				23326F212C4A9131639F4219 /* Pods_AltruisMaze_AltruisMazeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +137,7 @@
 				3ADA761F240311E8007F5248 /* AltruisMazeUITests */,
 				3ADA75F8240311E4007F5248 /* Products */,
 				CEEEF57E528F84E9F61C7708 /* Pods */,
-				A6FF403E779DC478DF0360F4 /* Frameworks */,
+				AD5818AFF89CBA0939548E39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,9 +164,9 @@
 				3ADA75FE240311E4007F5248 /* Actions.sks */,
 				3ADA7602240311E4007F5248 /* GameViewController.swift */,
 				3ADA7604240311E4007F5248 /* Main.storyboard */,
-				3ADA7607240311E7007F5248 /* Assets.xcassets */,
+				2ABA8AE924637E7500494AA8 /* Assets.xcassets */,
 				3ADA7609240311E7007F5248 /* LaunchScreen.storyboard */,
-				C721C911240C4CC90079F8DA /* GoogleService-Info.plist */,
+				2ABA8AEB24637E9A00494AA8 /* GoogleService-Info.plist */,
 				3ADA760C240311E7007F5248 /* Info.plist */,
 			);
 			path = AltruisMaze;
@@ -192,12 +190,12 @@
 			path = AltruisMazeUITests;
 			sourceTree = "<group>";
 		};
-		A6FF403E779DC478DF0360F4 /* Frameworks */ = {
+		AD5818AFF89CBA0939548E39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7DE13CE6EE69CCED95578A9B /* Pods_AltruisMaze.framework */,
-				32066CF712B8C37539609DEE /* Pods_AltruisMaze_AltruisMazeUITests.framework */,
-				E3A41FC7AB3A0675F5CE75E0 /* Pods_AltruisMazeTests.framework */,
+				265E4E5961D1838FC96920D7 /* Pods_AltruisMaze.framework */,
+				8EE44A5CCAA1129BFB097C26 /* Pods_AltruisMaze_AltruisMazeUITests.framework */,
+				4194D5AFDF6BB7C445207343 /* Pods_AltruisMazeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,12 +203,12 @@
 		CEEEF57E528F84E9F61C7708 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03B1FB5B13F1ADDE1219F50E /* Pods-AltruisMaze.debug.xcconfig */,
-				8BFDC902A3888B7932399FDA /* Pods-AltruisMaze.release.xcconfig */,
-				3688674F20E842B7F0D62086 /* Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig */,
-				E117B9311EE2555524174089 /* Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig */,
-				D84862C9CE54A044B6F06EB8 /* Pods-AltruisMazeTests.debug.xcconfig */,
-				0FFE7C85EBDC99F384F2AF4C /* Pods-AltruisMazeTests.release.xcconfig */,
+				055778E4BB73A0E1339734BD /* Pods-AltruisMaze.debug.xcconfig */,
+				61F49BAA74603E251CBCD5E7 /* Pods-AltruisMaze.release.xcconfig */,
+				97F66514543E8F1DEA413DB3 /* Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig */,
+				21A8F2EEDB5F6030D684FE5E /* Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig */,
+				8AF114A9B5C061DEC1E39DB3 /* Pods-AltruisMazeTests.debug.xcconfig */,
+				F92089360AD58CC1322D5FBF /* Pods-AltruisMazeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -222,11 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3ADA7625240311E8007F5248 /* Build configuration list for PBXNativeTarget "AltruisMaze" */;
 			buildPhases = (
-				AE2AB61F3C1731BCE76C3972 /* [CP] Check Pods Manifest.lock */,
+				EC1353C7C238BFCFCA822040 /* [CP] Check Pods Manifest.lock */,
 				3ADA75F3240311E4007F5248 /* Sources */,
 				3ADA75F4240311E4007F5248 /* Frameworks */,
 				3ADA75F5240311E4007F5248 /* Resources */,
-				1097995578AB311B0C011925 /* [CP] Embed Pods Frameworks */,
+				3118A870818CCD0681015CC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,7 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3ADA7628240311E8007F5248 /* Build configuration list for PBXNativeTarget "AltruisMazeTests" */;
 			buildPhases = (
-				BE5E648B56780A1E3101AC49 /* [CP] Check Pods Manifest.lock */,
+				EA91F934E8CE9E5E21EB5695 /* [CP] Check Pods Manifest.lock */,
 				3ADA760D240311E8007F5248 /* Sources */,
 				3ADA760E240311E8007F5248 /* Frameworks */,
 				3ADA760F240311E8007F5248 /* Resources */,
@@ -260,11 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3ADA762B240311E8007F5248 /* Build configuration list for PBXNativeTarget "AltruisMazeUITests" */;
 			buildPhases = (
-				7B310E08C92AD3F50E6552E8 /* [CP] Check Pods Manifest.lock */,
+				F05EFB12C4DDD022B9695DAC /* [CP] Check Pods Manifest.lock */,
 				3ADA7618240311E8007F5248 /* Sources */,
 				3ADA7619240311E8007F5248 /* Frameworks */,
 				3ADA761A240311E8007F5248 /* Resources */,
-				7DE3CAC5FDFD95A9EE41C758 /* [CP] Embed Pods Frameworks */,
+				4B81B538E54F2E8BAD904EE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,11 +326,11 @@
 				2A382C4C2462662F00CFCF60 /* Room 2S.sks in Resources */,
 				3ADA7606240311E4007F5248 /* Main.storyboard in Resources */,
 				3ADA75FD240311E4007F5248 /* Room 1N.sks in Resources */,
-				3ADA7608240311E7007F5248 /* Assets.xcassets in Resources */,
+				2ABA8AEA24637E7500494AA8 /* Assets.xcassets in Resources */,
 				2A382C4824621A4800CFCF60 /* Room 2N.sks in Resources */,
 				3ADA760B240311E7007F5248 /* LaunchScreen.storyboard in Resources */,
+				2ABA8AEC24637E9A00494AA8 /* GoogleService-Info.plist in Resources */,
 				3ADA75FF240311E4007F5248 /* Actions.sks in Resources */,
-				C721C912240C4CC90079F8DA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +340,6 @@
 			files = (
 				3A8B1598240A0BD000A39921 /* Room 1S.sks in Resources */,
 				2A382C4D2462662F00CFCF60 /* Room 2S.sks in Resources */,
-				C721C913240C4CC90079F8DA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,14 +349,13 @@
 			files = (
 				3A8B1599240A0BD000A39921 /* Room 1S.sks in Resources */,
 				2A382C4E2462662F00CFCF60 /* Room 2S.sks in Resources */,
-				C721C914240C4CC90079F8DA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1097995578AB311B0C011925 /* [CP] Embed Pods Frameworks */ = {
+		3118A870818CCD0681015CC5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,29 +372,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltruisMaze/Pods-AltruisMaze-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7B310E08C92AD3F50E6552E8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AltruisMaze-AltruisMazeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7DE3CAC5FDFD95A9EE41C758 /* [CP] Embed Pods Frameworks */ = {
+		4B81B538E54F2E8BAD904EE2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,7 +389,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AltruisMaze-AltruisMazeUITests/Pods-AltruisMaze-AltruisMazeUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE2AB61F3C1731BCE76C3972 /* [CP] Check Pods Manifest.lock */ = {
+		EA91F934E8CE9E5E21EB5695 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AltruisMazeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC1353C7C238BFCFCA822040 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,7 +433,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE5E648B56780A1E3101AC49 /* [CP] Check Pods Manifest.lock */ = {
+		F05EFB12C4DDD022B9695DAC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -452,7 +448,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AltruisMazeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AltruisMaze-AltruisMazeUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -648,7 +644,7 @@
 		};
 		3ADA7626240311E8007F5248 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03B1FB5B13F1ADDE1219F50E /* Pods-AltruisMaze.debug.xcconfig */;
+			baseConfigurationReference = 055778E4BB73A0E1339734BD /* Pods-AltruisMaze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -667,7 +663,7 @@
 		};
 		3ADA7627240311E8007F5248 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BFDC902A3888B7932399FDA /* Pods-AltruisMaze.release.xcconfig */;
+			baseConfigurationReference = 61F49BAA74603E251CBCD5E7 /* Pods-AltruisMaze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -686,7 +682,7 @@
 		};
 		3ADA7629240311E8007F5248 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D84862C9CE54A044B6F06EB8 /* Pods-AltruisMazeTests.debug.xcconfig */;
+			baseConfigurationReference = 8AF114A9B5C061DEC1E39DB3 /* Pods-AltruisMazeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -708,7 +704,7 @@
 		};
 		3ADA762A240311E8007F5248 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FFE7C85EBDC99F384F2AF4C /* Pods-AltruisMazeTests.release.xcconfig */;
+			baseConfigurationReference = F92089360AD58CC1322D5FBF /* Pods-AltruisMazeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -730,7 +726,7 @@
 		};
 		3ADA762C240311E8007F5248 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3688674F20E842B7F0D62086 /* Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig */;
+			baseConfigurationReference = 97F66514543E8F1DEA413DB3 /* Pods-AltruisMaze-AltruisMazeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -750,7 +746,7 @@
 		};
 		3ADA762D240311E8007F5248 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E117B9311EE2555524174089 /* Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig */;
+			baseConfigurationReference = 21A8F2EEDB5F6030D684FE5E /* Pods-AltruisMaze-AltruisMazeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
