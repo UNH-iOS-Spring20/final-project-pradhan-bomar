@@ -14,11 +14,22 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
         
+        //Frame Measurements for Positioning
+        let refX = self.frame.size.width, refY = self.frame.size.height
+        
         //Rotation Button
         let rotateButton = SKSpriteNode(imageNamed: "rotateButton.png")
-        rotateButton.position = CGPoint(x: self.frame.size.width/10, y: self.frame.size.height/10)
+        rotateButton.position = CGPoint(x: refX/10, y: refY/10)
         rotateButton.name = "rotateButton"
         self.addChild(rotateButton)
+        
+        //Message Board Button
+        //Icon Credit: https://www.pngitem.com/
+        
+        let messageButton = SKSpriteNode(imageNamed: "messageButton.png")
+        messageButton.position = CGPoint(x: refX - refX/10, y: refY - refY/9)
+        messageButton.name = "messageButton"
+        self.addChild(messageButton)
         
         //Player Appearance and Orientation
         let currentRoom = view.scene!.name
