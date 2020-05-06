@@ -23,6 +23,7 @@ class GameViewController: UIViewController {
         
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
+        // Loaded scene should retrieve data from Firebase to resume game where player left off. 
         if let scene = GKScene(fileNamed: "Room 1N") {
             
             // Get the SKScene from the loaded GKScene

@@ -20,9 +20,6 @@ class GameScene: SKScene {
         self.addChild(rotateButton)
         
         
-        //NE Door
-        var NEDoor = self.childNode(withName: "CodeDoor-Green") as? SKSpriteNode
-        
     }
 
     
@@ -82,7 +79,7 @@ class GameScene: SKScene {
                     let secondScene = GameScene(fileNamed: nextRoom)
                     let transition = SKTransition.fade(withDuration: 0.45)
                     secondScene?.scaleMode = .aspectFill
-                    self.view?.presentScene(secondScene!, transition: transition)
+                    scene?.view?.presentScene(secondScene!, transition: transition)
                 }
                 
                 //NE Door Transition to Room 2
@@ -90,7 +87,9 @@ class GameScene: SKScene {
                     let secondScene = GameScene(fileNamed: "Room 2N")
                     let transition = SKTransition.fade(withDuration: 0.45)
                     secondScene?.scaleMode = .aspectFill
-                    self.view?.presentScene(secondScene!, transition: transition)
+                    //Check Code
+                    let code: Bool = true
+                    if code{scene?.view?.presentScene(secondScene!, transition: transition)}
                 }
             }
         }
