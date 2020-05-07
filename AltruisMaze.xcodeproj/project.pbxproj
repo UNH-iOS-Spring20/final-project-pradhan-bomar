@@ -12,6 +12,7 @@
 		2A382C4C2462662F00CFCF60 /* Room 2S.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C4B2462662F00CFCF60 /* Room 2S.sks */; };
 		2A382C4D2462662F00CFCF60 /* Room 2S.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C4B2462662F00CFCF60 /* Room 2S.sks */; };
 		2A382C4E2462662F00CFCF60 /* Room 2S.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C4B2462662F00CFCF60 /* Room 2S.sks */; };
+		2A382C52246397D600CFCF60 /* Message Board.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C51246397D600CFCF60 /* Message Board.sks */; };
 		2ABA8AEA24637E7500494AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA8AE924637E7500494AA8 /* Assets.xcassets */; };
 		2ABA8AEC24637E9A00494AA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA8AEB24637E9A00494AA8 /* GoogleService-Info.plist */; };
 		3A635DC424036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
@@ -62,6 +63,7 @@
 		265E4E5961D1838FC96920D7 /* Pods_AltruisMaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltruisMaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A382C4724621A4800CFCF60 /* Room 2N.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Room 2N.sks"; sourceTree = "<group>"; };
 		2A382C4B2462662F00CFCF60 /* Room 2S.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Room 2S.sks"; sourceTree = "<group>"; };
+		2A382C51246397D600CFCF60 /* Message Board.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Message Board.sks"; sourceTree = "<group>"; };
 		2ABA8AE924637E7500494AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ABA8AEB24637E9A00494AA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A635DC324036A7F008FC3FF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				3A8B1596240A0BD000A39921 /* Room 1S.sks */,
 				2A382C4724621A4800CFCF60 /* Room 2N.sks */,
 				2A382C4B2462662F00CFCF60 /* Room 2S.sks */,
+				2A382C51246397D600CFCF60 /* Message Board.sks */,
 				3ADA75FE240311E4007F5248 /* Actions.sks */,
 				3ADA7602240311E4007F5248 /* GameViewController.swift */,
 				3ADA7604240311E4007F5248 /* Main.storyboard */,
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A8B1597240A0BD000A39921 /* Room 1S.sks in Resources */,
+				2A382C52246397D600CFCF60 /* Message Board.sks in Resources */,
 				2A382C4C2462662F00CFCF60 /* Room 2S.sks in Resources */,
 				3ADA7606240311E4007F5248 /* Main.storyboard in Resources */,
 				3ADA75FD240311E4007F5248 /* Room 1N.sks in Resources */,

@@ -130,7 +130,8 @@ class GameScene: SKScene {
                     messageBoard!.scaleMode = .aspectFill
                     scene?.view?.presentScene(messageBoard!, transition: transition)
                     
-                }            }
+                }
+            }
         }
     }
 }
