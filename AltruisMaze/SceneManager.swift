@@ -59,24 +59,11 @@ class GameScene: SKScene {
         border.friction = 0
         border.restitution = 0
         self.physicsBody = border
-        
         self.lastUpdateTime = 0
-        
       
     }
     
     
-    func touchDown(atPoint pos : CGPoint) {
-       
-    }
-    
-    func touchMoved(toPoint pos : CGPoint) {
-      
-    }
-    
-    func touchUp(atPoint pos : CGPoint) {
-      
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
@@ -108,14 +95,22 @@ class GameScene: SKScene {
                 
                 //Door Transition between Room 1 & 2
                 else if node.name == "codeDoor-Green"{
+                    
                     var secondScene = GameScene(fileNamed: currentRoom!)
                     if currentRoom == "Room 1N" {secondScene = GameScene(fileNamed: "Room 2N")!}
                     else if currentRoom == "Room 2S" {secondScene = GameScene(fileNamed: "Room 1S")!}
                     let transition = SKTransition.fade(withDuration: 0.45)
                     secondScene!.scaleMode = .aspectFill
-                    
+                    let textFieldFrame = CGRect(origin: .zero, size: CGSize(width: 200, height: 30))
+                    let textField = UITextField(frame: textFieldFrame)
+                    textField.backgroundColor = UIColor.white
+                    textField.textColor = UIColor.black
+                    textField.placeholder = "Password?"
+                    self.view!.addSubview(textField)
+
                     //Check Code
-                    let code: Bool = true
+                    var code: Bool = true
+                    if textField.text == "12345" {code = true}
                     if code{scene?.view?.presentScene(secondScene!, transition: transition)}
                 }
                 
