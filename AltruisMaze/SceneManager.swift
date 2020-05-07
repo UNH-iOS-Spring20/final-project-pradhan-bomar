@@ -35,12 +35,7 @@ class GameScene: SKScene {
         let currentRoom = view.scene!.name
         let roomDirection = currentRoom?.last //Get last character of current room which is N or S
         var whichTim: String
-        let doorTraversed: Bool = false, faceRight: Bool = false
-        if doorTraversed == true {
-            if faceRight {whichTim = "Tim-NE.png"}
-            else {whichTim = "Tim-NW.png"}
-        }
-        else if roomDirection == "N" {whichTim = "Tim-NE.png"}
+        if roomDirection == "N" {whichTim = "Tim-NE.png"}
         else {whichTim = "Tim-SW.png"}
         let Player = SKSpriteNode(imageNamed: whichTim)
         Player.position = CGPoint(x: 1118.212, y: 450.682)
@@ -126,10 +121,10 @@ class GameScene: SKScene {
                 
                 else if node.name == "messageButton"{
                     let messageBoard = MessageBoard(fileNamed : "Message Board")
+                    messageBoard!.PreviousRoom = currentRoom!
                     let transition = SKTransition.doorsCloseHorizontal(withDuration: 0.45)
                     messageBoard!.scaleMode = .aspectFill
                     scene?.view?.presentScene(messageBoard!, transition: transition)
-                    
                 }
             }
         }

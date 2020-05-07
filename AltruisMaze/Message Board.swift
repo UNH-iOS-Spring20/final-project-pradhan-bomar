@@ -10,6 +10,9 @@ import SpriteKit
 import GameplayKit
 
 class MessageBoard: SKScene {
+    
+    public var PreviousRoom: String = "Room 1N"
+    
     override func didMove(to view: SKView) {
         backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
         
@@ -23,6 +26,8 @@ class MessageBoard: SKScene {
         exitButton.name = "exitButton"
         self.addChild(exitButton)
         
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -31,7 +36,12 @@ class MessageBoard: SKScene {
             let location = touch.location(in: self)
             let nodesarray = nodes(at: location)
             for node in nodesarray {
-                
+                if node.name == "exitButton"{
+                    let returnScene = GameScene(fileNamed: PreviousRoom)
+                    let transition = SKTransition.doorsOpenHorizontal(withDuration: 0.45)
+                    returnScene!.scaleMode = .aspectFill
+                    scene?.view?.presentScene(returnScene!, transition: transition)
+                }
             }
         }
     }
