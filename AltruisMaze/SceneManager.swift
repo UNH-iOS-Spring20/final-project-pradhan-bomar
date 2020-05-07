@@ -19,7 +19,7 @@ class GameScene: SKScene {
         
         //Rotation Button
         let rotateButton = SKSpriteNode(imageNamed: "rotateButton.png")
-        rotateButton.position = CGPoint(x: refX/10, y: refY/10)
+        rotateButton.position = CGPoint(x: refX/11, y: refY/9)
         rotateButton.name = "rotateButton"
         self.addChild(rotateButton)
         
