@@ -22,11 +22,42 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        db.collection("posts").addDocument(data: ["name":"T", "post":"Can anyone help me with a Green key?"])
-        db.collection("posts").addDocument(data: ["name":"Q", "post":"Does anyone have decyrpted key for Red door?"])
+        //db.collection("posts").addDocument(data: ["name":"T", "post":"Can anyone help me with a Green key?"])
+        //db.collection("posts").addDocument(data: ["name":"Q", "post":"Does anyone have decyrpted key for Red door?"])
 
+    
+
+        let postsRef = db.collection("posts")
+
+        postsRef.document("Q").setData([
+            "name": "Q",
+            "post": "Hi. I'm trying to find a key to a Green door. Could anyone please help me?"
+            ])
+        postsRef.document("T").setData([
+            "name": "T",
+            "post": "I have a decrypted password for Red Door. Is anyone willing to exchange it for Red key?"
+            ])
+        postsRef.document("Z").setData([
+            "name": "H",
+            "post": "Hey Q. I have a Green key that I could give to you."
+            ])
+        postsRef.document("Q1").setData([
+            "name": "Q",
+            "post": "Thanks H!"
+            ])
+      
+       
         
-        // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
+        db.collection("posts").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+    // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
         // Loaded scene should retrieve data from Firebase to resume game where player left off. 
         if let scene = GKScene(fileNamed: "Room 1N") {

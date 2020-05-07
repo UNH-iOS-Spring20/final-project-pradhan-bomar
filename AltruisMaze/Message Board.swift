@@ -8,11 +8,15 @@
 
 import SpriteKit
 import GameplayKit
+import Firebase
 import FirebaseFirestore
 
-//let db = Firestore.firestore()
+
 
 class MessageBoard: SKScene{
+      
+
+
     public var PreviousRoom: String = "Room 1N"
     override func didMove(to view: SKView) {
         backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
@@ -40,6 +44,8 @@ class MessageBoard: SKScene{
         exitButton.position = CGPoint(x: refX/10, y: refY/10)
         exitButton.name = "exitButton"
         self.addChild(exitButton)
+        
+        
         
         
         
