@@ -10,14 +10,19 @@ import UIKit
 import SpriteKit
 import GameplayKit
 import FirebaseFirestore
+import FirebaseDatabase
 
 // The entire class can use the database
 let db = Firestore.firestore()
 class GameViewController: UIViewController {
 // create buttons for delete, collect data from teh collection in Firebase
+    
+    var ref: DatabaseReference! // instance of database
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        ref = Database.database().reference() // instance of database
         getCollection(collection: "users")
 
         
@@ -47,6 +52,10 @@ class GameViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @IBAction func addPost(_ sender: Any){
+        ref?.child("Posts").childByAutoId().setValue("Hello Firebase")
     }
     // Adding data into Firbase, has to be triggered for this to work. Use button
     private func createUsers(){

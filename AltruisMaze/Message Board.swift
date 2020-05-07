@@ -8,17 +8,31 @@
 
 import SpriteKit
 import GameplayKit
+import FirebaseFirestore
+
+//let db = Firestore.firestore()
 
 class MessageBoard: SKScene {
-    
     public var PreviousRoom: String = "Room 1N"
-    
     override func didMove(to view: SKView) {
         backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
         
         //Frame Measurements for Positioning
         let refX = self.frame.size.width, refY = self.frame.size.height
         
+    
+        //self.backgroundColor = SKColor.black
+          
+        let button = SKLabelNode()
+        button.text = "Message Board"
+        //outletLeaderboard.titleLabel!.font =  UIFont(name: "HelveticaNeue-Thin", size: 20)
+        
+        
+        button.position = CGPoint(x: self.frame.midX, y:self.frame.maxY - button.frame.size.height*3)
+        button.name = "tapMe"
+        self.addChild(button)
+        
+    
         //Exit Button
         //Icon from freeicon.com
         let exitButton = SKSpriteNode(imageNamed: "exitButton.png")
