@@ -26,7 +26,6 @@ class GameViewController: UIViewController {
         //db.collection("posts").addDocument(data: ["name":"Q", "post":"Does anyone have decyrpted key for Red door?"])
 
     
-
         let postsRef = db.collection("posts")
 
         postsRef.document("Q").setData([

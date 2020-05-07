@@ -25,7 +25,6 @@ class GameScene: SKScene {
         
         //Message Board Button
         //Icon Credit: https://www.pngitem.com/
-        
         let messageButton = SKSpriteNode(imageNamed: "messageButton.png")
         messageButton.position = CGPoint(x: refX - refX/10, y: refY - refY/9)
         messageButton.name = "messageButton"
@@ -112,6 +111,19 @@ class GameScene: SKScene {
                     var code: Bool = true
                     if textField.text == "12345" {code = true}
                     if code{scene?.view?.presentScene(secondScene!, transition: transition)}
+                }
+                
+                else if node.name == "keyDoor-Red"{
+                    var secondScene = GameScene(fileNamed: currentRoom!)
+                    if currentRoom == "Room 1S" {secondScene = GameScene(fileNamed: "Room 3S")!}
+                    else if currentRoom == "Room 3N" {secondScene = GameScene(fileNamed: "Room 3N")!}
+                    let transition = SKTransition.fade(withDuration: 0.45)
+                    secondScene!.scaleMode = .aspectFill
+                    scene?.view?.presentScene(secondScene!, transition: transition)
+                }
+                //redkey taken from iconsdb.com and modified
+                else if node.name == "redKey"{
+                    node.removeFromParent()
                 }
                 
                 else if node.name == "messageButton"{

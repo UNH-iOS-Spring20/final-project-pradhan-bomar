@@ -25,17 +25,21 @@ class MessageBoard: SKScene{
         let refX = self.frame.size.width, refY = self.frame.size.height
         
     
-        //self.backgroundColor = SKColor.black
-          
-        let button = SKLabelNode()
-        button.text = "Message Board"
-        //outletLeaderboard.titleLabel!.font =  UIFont(name: "HelveticaNeue-Thin", size: 20)
+        //Banner
+        let title = SKLabelNode()
+        title.text = "Message Board"
+        title.fontColor = UIColor.yellow
+        title.fontSize = 76
+        title.position = CGPoint(x: refX/2, y:refY - (refY/10))
+        title.name = "title"
+        self.addChild(title)
         
-        
-        button.position = CGPoint(x: self.frame.midX, y:self.frame.maxY - button.frame.size.height*3)
-        button.name = "tapMe"
-        self.addChild(button)
-        
+        //FromFirebasePhoto
+        let photo = SKSpriteNode(imageNamed: "FBDL.png")
+        photo.position = CGPoint(x: refX/2, y: refY/2)
+        photo.size = CGSize(width: 1000, height: 500)
+        photo.name = "photo"
+        self.addChild(photo)
         
     
         //Exit Button

@@ -15,6 +15,8 @@
 		2A382C52246397D600CFCF60 /* Message Board.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C51246397D600CFCF60 /* Message Board.sks */; };
 		2A382C5424639D0000CFCF60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C5324639D0000CFCF60 /* GoogleService-Info.plist */; };
 		2A382C5624639EA800CFCF60 /* Message Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A382C5524639EA800CFCF60 /* Message Board.swift */; };
+		2A382C5824648DAB00CFCF60 /* Room 3S.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C5724648DAB00CFCF60 /* Room 3S.sks */; };
+		2A382C5A24648E1900CFCF60 /* Room 3N.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A382C5924648E1900CFCF60 /* Room 3N.sks */; };
 		2ABA8AEA24637E7500494AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA8AE924637E7500494AA8 /* Assets.xcassets */; };
 		3A635DC424036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
 		3A635DC524036A7F008FC3FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A635DC324036A7F008FC3FF /* Player.swift */; };
@@ -67,6 +69,8 @@
 		2A382C51246397D600CFCF60 /* Message Board.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Message Board.sks"; sourceTree = "<group>"; };
 		2A382C5324639D0000CFCF60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A382C5524639EA800CFCF60 /* Message Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message Board.swift"; sourceTree = "<group>"; };
+		2A382C5724648DAB00CFCF60 /* Room 3S.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Room 3S.sks"; sourceTree = "<group>"; };
+		2A382C5924648E1900CFCF60 /* Room 3N.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Room 3N.sks"; sourceTree = "<group>"; };
 		2ABA8AE924637E7500494AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A635DC324036A7F008FC3FF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3A635DC724037533008FC3FF /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				3A8B1596240A0BD000A39921 /* Room 1S.sks */,
 				2A382C4724621A4800CFCF60 /* Room 2N.sks */,
 				2A382C4B2462662F00CFCF60 /* Room 2S.sks */,
+				2A382C5724648DAB00CFCF60 /* Room 3S.sks */,
+				2A382C5924648E1900CFCF60 /* Room 3N.sks */,
 				2A382C5524639EA800CFCF60 /* Message Board.swift */,
 				2A382C51246397D600CFCF60 /* Message Board.sks */,
 				3ADA75FE240311E4007F5248 /* Actions.sks */,
@@ -331,6 +337,8 @@
 				3A8B1597240A0BD000A39921 /* Room 1S.sks in Resources */,
 				2A382C52246397D600CFCF60 /* Message Board.sks in Resources */,
 				2A382C4C2462662F00CFCF60 /* Room 2S.sks in Resources */,
+				2A382C5824648DAB00CFCF60 /* Room 3S.sks in Resources */,
+				2A382C5A24648E1900CFCF60 /* Room 3N.sks in Resources */,
 				3ADA7606240311E4007F5248 /* Main.storyboard in Resources */,
 				3ADA75FD240311E4007F5248 /* Room 1N.sks in Resources */,
 				2ABA8AEA24637E7500494AA8 /* Assets.xcassets in Resources */,
