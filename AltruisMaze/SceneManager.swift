@@ -125,8 +125,8 @@ class GameScene: SKScene {
                 }
                 
                 else if node.name == "messageButton"{
-                    var messageBoard = GameScene(fileNamed : "MessageBoard")
-                    let transition = SKTransition.fade(withDuration: 0.45)
+                    let messageBoard = MessageBoard(fileNamed : "Message Board")
+                    let transition = SKTransition.doorsCloseHorizontal(withDuration: 0.45)
                     messageBoard!.scaleMode = .aspectFill
                     scene?.view?.presentScene(messageBoard!, transition: transition)
                     
