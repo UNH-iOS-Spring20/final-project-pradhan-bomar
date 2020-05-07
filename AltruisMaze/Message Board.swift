@@ -12,7 +12,7 @@ import FirebaseFirestore
 
 //let db = Firestore.firestore()
 
-class MessageBoard: SKScene {
+class MessageBoard: SKScene{
     public var PreviousRoom: String = "Room 1N"
     override func didMove(to view: SKView) {
         backgroundColor = SKColor(red: 0.15, green:0.15, blue:0.3, alpha: 1.0)
@@ -31,6 +31,7 @@ class MessageBoard: SKScene {
         button.position = CGPoint(x: self.frame.midX, y:self.frame.maxY - button.frame.size.height*3)
         button.name = "tapMe"
         self.addChild(button)
+        
         
     
         //Exit Button
