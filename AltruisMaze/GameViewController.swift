@@ -13,8 +13,10 @@ import Firebase
 import FirebaseFirestore
 import FirebaseDatabase
 
+
 // The entire class can use the database
 let db = Firestore.firestore()
+var messagePosts: [[String: String]] = []
 class GameViewController: UIViewController {
 // create buttons for delete, collect data from teh collection in Firebase
     
@@ -35,15 +37,14 @@ class GameViewController: UIViewController {
         postsRef.document("T").setData([
             "name": "T",
             "post": "I have a decrypted password for Red Door. Is anyone willing to exchange it for Red key?"
-            ])
+                ])
         postsRef.document("Z").setData([
             "name": "H",
-            "post": "Hey Q. I have a Green key that I could give to you."
-            ])
+            "post": "Hey Q. I have a Green key that I could give to you."           ])
         postsRef.document("Q1").setData([
             "name": "Q",
             "post": "Thanks H!"
-            ])
+                     ])
       
        
         
@@ -52,6 +53,7 @@ class GameViewController: UIViewController {
                 print("Error getting documents: \(err)")
             } else {
                 for document in querySnapshot!.documents {
+                    messagePosts.append(document.data() as! [String : String])
                     print("\(document.documentID) => \(document.data())")
                 }
             }

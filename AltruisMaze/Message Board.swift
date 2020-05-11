@@ -41,6 +41,28 @@ class MessageBoard: SKScene{
         photo.name = "photo"
         self.addChild(photo)
         
+        
+        print("hello",messagePosts)
+        for message in messagePosts{
+            let postname = SKLabelNode()
+            postname.text = message["name"]
+            postname.fontColor = UIColor.yellow
+            postname.fontSize = 50
+            postname.position = CGPoint(x: refX/2, y: refY - (refY/2))
+            postname.name = "name"
+            
+            
+            let post = SKLabelNode()
+            post.text = message["post"]
+            post.fontColor = UIColor.yellow
+            post.fontSize = 60
+            post.position = CGPoint(x: refX/2, y: refY - (refY/4))
+            post.name = "post"
+            
+            self.addChild(postname)
+            self.addChild(post)
+            break
+        }
     
         //Exit Button
         //Icon from freeicon.com
@@ -48,10 +70,6 @@ class MessageBoard: SKScene{
         exitButton.position = CGPoint(x: refX/10, y: refY/10)
         exitButton.name = "exitButton"
         self.addChild(exitButton)
-        
-        
-        
-        
         
     }
     
