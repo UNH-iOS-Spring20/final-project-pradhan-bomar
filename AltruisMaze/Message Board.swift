@@ -41,27 +41,25 @@ class MessageBoard: SKScene{
         photo.name = "photo"
         //self.addChild(photo)
         
-        var x = 1
-        //var refYM = Int(refY - refY/10)
-        //var refYCP = Int(refY/20)
+        let refYM = refY - refY/9
+        var refYCP = refYM - refY/20
         //print("hello",messagePosts)
         for message in messagePosts{
             let postname = SKLabelNode()
-            postname.text = message["name"]
-            postname.fontColor = UIColor.yellow
-            postname.fontSize = 50
-         
-            postname.position = CGPoint(x: refX/2, y: refY/)
+            postname.text = "Player: " + message["name"]!
+            postname.fontColor = UIColor.white
+            postname.fontSize = 64
+            postname.position = CGPoint(x: refX/2, y: refYCP)
             postname.name = "name"
-            x = x+1
+            refYCP -= refY/20
             
             let post = SKLabelNode()
-            post.text = message["post"]
-            post.fontColor = UIColor.yellow
-            post.fontSize = 50
-            post.position = CGPoint(x: refX/2, y: refY/2)
+            post.text = "Message: " + message["post"]!
+            post.fontColor = UIColor.green
+            post.fontSize = 64
+            post.position = CGPoint(x: refX/2, y: refYCP)
             post.name = "post"
-            x = x + 1
+            refYCP -= refY/20
             self.addChild(postname)
             self.addChild(post)
             break

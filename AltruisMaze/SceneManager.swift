@@ -41,6 +41,14 @@ class GameScene: SKScene {
         Player.size = CGSize(width: 544.085, height: 485)
         Player.zPosition = 1
         scene?.addChild(Player)
+        
+        let textFieldFrame = CGRect(origin: .zero, size: CGSize(width: 200, height: 30))
+        let textField = UITextField(frame: textFieldFrame)
+        textField.backgroundColor = UIColor.white
+        textField.textColor = UIColor.black
+        textField.placeholder = "Password?"
+        self.view!.addSubview(textField)
+        
     }
     
     
@@ -59,12 +67,15 @@ class GameScene: SKScene {
         border.restitution = 0
         self.physicsBody = border
         self.lastUpdateTime = 0
+        
+        
       
     }
     
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         
         if let touch = touches.first {
             let location = touch.location(in: self)
@@ -100,23 +111,17 @@ class GameScene: SKScene {
                     else if currentRoom == "Room 2S" {secondScene = GameScene(fileNamed: "Room 1S")!}
                     let transition = SKTransition.fade(withDuration: 0.45)
                     secondScene!.scaleMode = .aspectFill
-                    let textFieldFrame = CGRect(origin: .zero, size: CGSize(width: 200, height: 30))
-                    let textField = UITextField(frame: textFieldFrame)
-                    textField.backgroundColor = UIColor.white
-                    textField.textColor = UIColor.black
-                    textField.placeholder = "Password?"
-                    self.view!.addSubview(textField)
 
                     //Check Code
                     var code: Bool = true
-                    if textField.text == "12345" {code = true}
+                    //if textField.text == "12345" {code = true}
                     if code{scene?.view?.presentScene(secondScene!, transition: transition)}
                 }
                 
                 else if node.name == "keyDoor-Red"{
                     var secondScene = GameScene(fileNamed: currentRoom!)
                     if currentRoom == "Room 1S" {secondScene = GameScene(fileNamed: "Room 3S")!}
-                    else if currentRoom == "Room 3N" {secondScene = GameScene(fileNamed: "Room 3N")!}
+                    else if currentRoom == "Room 3N" {secondScene = GameScene(fileNamed: "Room 1N")!}
                     let transition = SKTransition.fade(withDuration: 0.45)
                     secondScene!.scaleMode = .aspectFill
                     scene?.view?.presentScene(secondScene!, transition: transition)
