@@ -39,26 +39,29 @@ class MessageBoard: SKScene{
         photo.position = CGPoint(x: refX/2, y: refY/2)
         photo.size = CGSize(width: 1000, height: 500)
         photo.name = "photo"
-        self.addChild(photo)
+        //self.addChild(photo)
         
-        
-        print("hello",messagePosts)
+        var x = 1
+        //var refYM = Int(refY - refY/10)
+        //var refYCP = Int(refY/20)
+        //print("hello",messagePosts)
         for message in messagePosts{
             let postname = SKLabelNode()
             postname.text = message["name"]
             postname.fontColor = UIColor.yellow
             postname.fontSize = 50
-            postname.position = CGPoint(x: refX/2, y: refY - (refY/2))
+         
+            postname.position = CGPoint(x: refX/2, y: refY/)
             postname.name = "name"
-            
+            x = x+1
             
             let post = SKLabelNode()
             post.text = message["post"]
             post.fontColor = UIColor.yellow
-            post.fontSize = 60
-            post.position = CGPoint(x: refX/2, y: refY - (refY/4))
+            post.fontSize = 50
+            post.position = CGPoint(x: refX/2, y: refY/2)
             post.name = "post"
-            
+            x = x + 1
             self.addChild(postname)
             self.addChild(post)
             break
